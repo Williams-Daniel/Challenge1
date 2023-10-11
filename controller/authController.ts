@@ -3,6 +3,8 @@ import bcrypt from "bcrypt"
 import authModel  from "../models/authModel";
 import { streamUpload } from "../utils/streamify";
 
+
+
 export const registerUser = async(req:Request,res:Response)=>{
     try {
         const {userName,email,password} = req.body
